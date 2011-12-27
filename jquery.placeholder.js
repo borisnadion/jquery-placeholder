@@ -49,7 +49,7 @@
 	function args(elem) {
 		// Return an object of element attributes
 		var newAttrs = {},
-		    rinlinejQuery = /^jQuery\d+$/;
+		    rinlinejQuery = /^jQuery\d+$|^data-validate$/;
 		$.each(elem.attributes, function(i, attr) {
 			if (attr.specified && !rinlinejQuery.test(attr.name)) {
 				newAttrs[attr.name] = attr.value;
